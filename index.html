@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festival Huế 2025</title>
+  <link rel="stylesheet" href="assert/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <!-- <div class="navbar-collapse">
+    <div class="text-white text-center  logo d-flex w-100 justify-content-evenly ">
+      <img class="" src="./image/Logo-festival.png" alt="">
+      <h1 class="text-center align-self-center fw-bold">FESTIVAL HUẾ 2025</h1>
+    </div>
+  </div> -->
+
+  <!-- banner -->
+  <div class="d-flex align-items-center">
+    <header class="banner m-auto d-md-flex flex-column flex-md-row">
+
+      <!-- desktop -->
+      <div data-aos="fade-up" class="banner-text d-none d-md-block">
+        <img src="./image/Logo-festival.png" class="banner-logo" alt="">
+        <h1 class="text-center mt-5 text-danger fw-bold text-heritage-glow">Festival Huế 2025</h1>
+        <p class="text-center">Di sản xưa – Hơi thở mới</p>
+      </div>
+      <!-- mobile -->
+      <div class="overlay-wrapper d-block d-md-none position-relative w-100">
+        <img src="./image/background-1.jpg" alt="" class="responsive-img img-fluid w-100">
+        <div class="overlay-layer position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+        <!-- Chữ và logo nằm giữa ảnh -->
+        <div class="mobile-text position-absolute top-50 start-50 translate-middle text-white text-center px-3">
+          <img src="./image/Logo-festival.png" class="mb-3" style="width: 80px; height: 80px;" alt="">
+          <h1 data-aos="fade-up">Festival Huế 2025</h1>
+          <p data-aos="fade-up">Di sản xưa – Hơi thở mới</p>
+        </div>
+      </div>
+
+      <!-- ảnh bên phải -->
+      <!-- <div class="responsive-img overflow-hidden img-fluid d-none d-md-block"> -->
+      <div id="carouselExampleSlidesOnly"
+        class="carousel slide carousel-fade responsive-img overflow-hidden img-fluid d-none d-md-block"
+        data-bs-ride="carousel" data-aos="fade-up" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="image/background-1.jpg" class="d-block w-100  zoom-img" alt="ảnh 1">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="content-box">
+                <div class="welcome-text">FESTIVAL</div>
+                <h1>nơi giao thoa văn hóa, tôn vinh nghệ thuật và bản sắc truyền thống cố đô</h1>
+                <div class="button-wrapper">
+                  <button>XEM THÊM</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./image/banner-lehoijpg.jpg" class="d-block w-100 zoom-img" alt="ảnh 2">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="content-box">
+                <div class="welcome-text">nghệ thuật</div>
+                <h1>mang vẻ trầm lắng, tinh tế, phản ánh chiều sâu văn hóa và hồn cốt cố đô</h1>
+
+                <div class="button-wrapper">
+                  <button>XEM THÊM</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="image/am-thuc.jpg" class="d-block w-100 zoom-img" alt="ảnh 3">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="content-box">
+                <div class="welcome-text">ẩm thực</div>
+                <h1>tinh tế, hài hòa hương vị, đậm đà bản sắc cung đình và dân gian miền Trung.</h1>
+                <div class="button-wrapper">
+                  <button href="#detail">XEM THÊM</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <!-- Ảnh bên phải ở desktop -->
+
+    </header>
+  </div>
+
+
+  <!-- history develops -->
+  <!-- <div class="container bg-body-secondary h-100 pt-4">
+    <h2 class="text-center text-uppercase ">lịch sử phát triển</h2>
+    <div class="box-content container">
+      <div class="timeline">
+
+        <div class="years row g-3">
+          <div class="col">
+            <label for="y1">1687</label>
+            <input type="radio" name="" id="y1" hidden onclick="slectY(id)">
+          </div>
+          <div class="col">
+            <label for="y2">1788</label>
+            <input type="radio" name="" id="y2" hidden onclick="slectY(id)">
+          </div>
+          <div class="col">
+            <label for="y3">1802</label>
+            <input type="radio" name="" id="y3" hidden onclick="slectY(id)">
+          </div>
+          <div class="col">
+            <label class="" for="y4">1898</label>
+            <input type="radio" name="" id="y4" hidden onclick="slectY(id)">
+          </div>
+          <div class="col">
+            <label for="y5">1975</label>
+            <input type="radio" name="" id="y5" hidden onclick="slectY(id)">
+          </div>
+          <div class="col">
+            <label for="y6">2025</label>
+            <input type="radio" name="" id="y6" hidden onclick="slectY(id)">
+          </div>
+        </div>
+
+        <div class="tientrinh">
+          <div class="progress tien">
+            <div class="progress-bar  bg-success" role="progressbar" id="progress-bar"></div>
+          </div>
+        </div>
+
+        <div class="row mt-5" id="content">
+
+
+        </div>
+
+
+      </div>
+    </div>
+    <div class="content-history d-flex" id="year1">
+      <div class="row">
+        <div class="history-img col-6">
+          <img src="./image/introduction-1.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="history-text col-6">
+          <h2>Thời kỳ các chúa Nguyễn</h2>
+          <p>Năm 1687, chúa Nguyễn Phúc Thái chọn Phú Xuân (tức Huế ngày nay) làm thủ phủ của Đàng Trong, đánh dấu bước
+            khởi đầu quan trọng cho sự hình thành và phát triển của vùng đất này.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content-history d-flex" id="year1">
+      <div class="row">
+        <div class="history-img col-6">
+          <img src="./image/introduction-1.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="history-text col-6">
+          <h2>Thời kỳ các chúa Nguyễn</h2>
+          <p>Năm 1687, chúa Nguyễn Phúc Thái chọn Phú Xuân (tức Huế ngày nay) làm thủ phủ của Đàng Trong, đánh dấu bước
+            khởi đầu quan trọng cho sự hình thành và phát triển của vùng đất này.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content-history d-flex" id="year1">
+      <div class="row">
+        <div class="history-img col-6">
+          <img src="./image/introduction-1.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="history-text col-6">
+          <h2>Thời kỳ các chúa Nguyễn</h2>
+          <p>Năm 1687, chúa Nguyễn Phúc Thái chọn Phú Xuân (tức Huế ngày nay) làm thủ phủ của Đàng Trong, đánh dấu bước
+            khởi đầu quan trọng cho sự hình thành và phát triển của vùng đất này.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content-history d-flex" id="year1">
+      <div class="row">
+        <div class="history-img col-6">
+          <img src="./image/introduction-1.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="history-text col-6">
+          <h2>Thời kỳ các chúa Nguyễn</h2>
+          <p>Năm 1687, chúa Nguyễn Phúc Thái chọn Phú Xuân (tức Huế ngày nay) làm thủ phủ của Đàng Trong, đánh dấu bước
+            khởi đầu quan trọng cho sự hình thành và phát triển của vùng đất này.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content-history d-flex" id="year1">
+      <div class="row">
+        <div class="history-img col-6">
+          <img src="./image/introduction-1.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="history-text col-6">
+          <h2>Thời kỳ các chúa Nguyễn</h2>
+          <p>Năm 1687, chúa Nguyễn Phúc Thái chọn Phú Xuân (tức Huế ngày nay) làm thủ phủ của Đàng Trong, đánh dấu bước
+            khởi đầu quan trọng cho sự hình thành và phát triển của vùng đất này.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content-history d-flex" id="year1">
+      <div class="row">
+        <div class="history-img col-6">
+          <img src="./image/introduction-1.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="history-text col-6">
+          <h2>Thời kỳ các chúa Nguyễn</h2>
+          <p>Năm 1687, chúa Nguyễn Phúc Thái chọn Phú Xuân (tức Huế ngày nay) làm thủ phủ của Đàng Trong, đánh dấu bước
+            khởi đầu quan trọng cho sự hình thành và phát triển của vùng đất này.</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <section class="timeline-section" style="background-image: url(image/bg-timeline.png);">
+    <h2 class="section-title">Lịch Sử Phát Triển Của Huế</h2>
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-date">1802</div>
+        <div class="timeline-content">
+          <h3>Huế trở thành kinh đô</h3>
+          <p>Triều Nguyễn thành lập, Huế được chọn làm kinh đô đầu tiên của nước Việt Nam thống nhất.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-date">1945</div>
+        <div class="timeline-content">
+          <h3>Kết thúc thời kỳ phong kiến</h3>
+          <p>Vua Bảo Đại thoái vị, chấm dứt chế độ quân chủ và triều Nguyễn.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-date">1993</div>
+        <div class="timeline-content">
+          <h3>Di sản thế giới</h3>
+          <p>Quần thể di tích Cố đô Huế được UNESCO công nhận là Di sản Văn hóa Thế giới.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-date">2025</div>
+        <div class="timeline-content">
+          <h3>Tiếp tục tỏa sáng</h3>
+          <p>Huế tổ chức lễ hội văn hóa đặc sắc, tiếp tục khẳng định vị thế trung tâm văn hóa của Việt Nam.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-date">2025</div>
+        <div class="timeline-content">
+          <h3>Tiếp tục tỏa sáng</h3>
+          <p>Huế tổ chức lễ hội văn hóa đặc sắc, tiếp tục khẳng định vị thế trung tâm văn hóa của Việt Nam.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-date">2025</div>
+        <div class="timeline-content">
+          <h3>Tiếp tục tỏa sáng</h3>
+          <p>Huế tổ chức lễ hội văn hóa đặc sắc, tiếp tục khẳng định vị thế trung tâm văn hóa của Việt Nam.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="w-100 h-100 d-block bg-info"></div>
+
+  <!-- nghe thuat -->
+
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="./assert/bootstrap/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- JS AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- JS Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+
+</html>
