@@ -1,58 +1,29 @@
-const tientrinh = document.getElementById("progress-bar");
 
-function slectY(id) {
-  var file = ".years/y1976.html";
-  console.log(file);
-  console.log(id);
+let currentRow = 1;
+  const totalRows = 2;
 
-  switch (id) {
-    case "y1": {
-      tientrinh.style.width = "8%";
-      file = "./years/y1976.html";
-      break;
+  const showMoreBtn = document.getElementById("show-more-btn");
+  const hideBtn = document.getElementById("hide-btn");
+
+  showMoreBtn.addEventListener("click", function () {
+    const nextRow = document.getElementById("extra-row-" + currentRow);
+    if (nextRow) {
+      nextRow.classList.remove("d-none");
+      currentRow++;
+      if (currentRow > totalRows) {
+        showMoreBtn.classList.add("d-none");
+        hideBtn.classList.remove("d-none");
+      }
     }
+  });
 
-
-    case "y2":
-      tientrinh.style.width = "25%";
-      file = "./years/y1986.html";
-      break;
-    case "y3":
-      tientrinh.style.width = "40%";
-      file = "./years/y1996.html";
-      break;
-    case "y4":
-      tientrinh.style.width = "59%";
-      file = "./years/y2006.html";
-      break;
-    case "y5":
-      tientrinh.style.width = "76%";
-      file = "./years/y2016.html";
-      break;
-    case "y6":
-      tientrinh.style.width = "100%";
-      file = "./years/y2026.html";
-      break;
-
-    default:
-      break;
-  }
-
-  $.ajax({
-    url: file, success: function (res) {
-      console.log(res);
-
-      $("#content").html(res);
+  hideBtn.addEventListener("click", function () {
+    // Ẩn tất cả extra row
+    for (let i = 1; i <= totalRows; i++) {
+      const row = document.getElementById("extra-row-" + i);
+      row.classList.add("d-none");
     }
-  }
-
-  );
-
-
-}
-
-
-$(document).ready(function () {
-  slectY("y1")
-});
-
+    currentRow = 1;
+    hideBtn.classList.add("d-none");
+    showMoreBtn.classList.remove("d-none");
+  });
