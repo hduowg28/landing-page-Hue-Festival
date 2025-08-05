@@ -163,16 +163,12 @@ body {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 999px;
-    /* bo tròn hoàn toàn */
     background-color: rgba(200, 200, 200, 0.3);
-    /* xám nhạt, xuyên nền */
     color: white;
     text-decoration: none;
     font-weight: 500;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    /* viền nhẹ */
     backdrop-filter: blur(4px);
-    /* làm mờ nền sau nếu có */
     transition: all 0.3s ease;
 }
 
@@ -190,7 +186,6 @@ body {
     animation: bounce 1.2s infinite ease-in-out;
 }
 
-/* Hiệu ứng lên xuống */
 @keyframes bounce {
 
     0%,
@@ -300,7 +295,6 @@ body {
     transform: translateX(-50%);
 }
 
-/* Kích thước và căn chỉnh nút trong mobile */
 .button-wrapper .custom-btn {
     font-size: 16px;
     padding: 10px 20px;
@@ -381,7 +375,7 @@ body {
 .timeline-date {
     position: absolute;
     left: -60px;
-    top: 0;
+    top: 10px;
     background-color: #663399;
     color: white;
     padding: 6px 12px;
@@ -445,15 +439,15 @@ body {
     color: #ff0404;
 }
 
-.art-element:hover .art-text h3 {
+/* .art-element:hover .art-text h3 {
     color: #c62828;
     font-weight: 700;
-}
-
+} */
+/* 
 .art-element:hover .art-text p {
     color: #444;
     font-weight: 500;
-}
+} */
 
 .food {
     background: linear-gradient(to bottom, #fef6da, #f3f0dc, #e9ecec);
@@ -490,7 +484,6 @@ body {
     opacity: 1;
 }
 
-/* Nội dung hiện lên */
 .card-text {
     position: absolute;
     bottom: 16px;
@@ -509,7 +502,6 @@ body {
 
 .card-text h4 {
     font-size: 1.125rem;
-    /* tương đương text-lg */
     font-weight: bold;
     margin-bottom: 8px;
 }
@@ -519,7 +511,6 @@ body {
     line-height: 1.6;
 }
 
-/* Hiện nội dung trên màn hình nhỏ (điện thoại) */
 @media (max-width: 768px) {
     .card-text {
         opacity: 1 !important;
@@ -553,6 +544,18 @@ body {
     height: 100%;
 }
 
-.row {
-    transition: all 0.5s ease;
+.btn-menu {
+    margin: 5px;
+}
+
+.food-section {
+    display: none;
+}
+
+.food-section.active {
+    display: block;
+}
+.btn-menu.active {
+  background-color: #c392f3;
+  color: white;
 }
