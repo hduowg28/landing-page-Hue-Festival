@@ -1,29 +1,45 @@
 
 let currentRow = 1;
-  const totalRows = 2;
+const totalRows = 2;
 
-  const showMoreBtn = document.getElementById("show-more-btn");
-  const hideBtn = document.getElementById("hide-btn");
+const showMoreBtn = document.getElementById("show-more-btn");
+const hideBtn = document.getElementById("hide-btn");
 
-  showMoreBtn.addEventListener("click", function () {
-    const nextRow = document.getElementById("extra-row-" + currentRow);
-    if (nextRow) {
-      nextRow.classList.remove("d-none");
-      currentRow++;
-      if (currentRow > totalRows) {
-        showMoreBtn.classList.add("d-none");
-        hideBtn.classList.remove("d-none");
-      }
+showMoreBtn.addEventListener("click", function () {
+  const nextRow = document.getElementById("extra-row-" + currentRow);
+  if (nextRow) {
+    nextRow.classList.remove("d-none");
+    currentRow++;
+    if (currentRow > totalRows) {
+      showMoreBtn.classList.add("d-none");
+      hideBtn.classList.remove("d-none");
     }
+  }
+});
+
+
+function showSection(id) {
+
+  document.querySelectorAll('.food-section').forEach(section => {
+    section.classList.remove('active');
+  });
+  document.getElementById(id).classList.add('active');
+
+
+  document.querySelectorAll('.btn-menu').forEach(btn => {
+    btn.classList.remove('active');
   });
 
-  hideBtn.addEventListener("click", function () {
-    // Ẩn tất cả extra row
-    for (let i = 1; i <= totalRows; i++) {
-      const row = document.getElementById("extra-row-" + i);
-      row.classList.add("d-none");
+  const buttonIdMap = {
+    'monchinh': 'Món chính truyền thống',
+    'monbanh': 'Món bánh',
+    'trangmieng': 'Tráng miệng',
+    'thucuong': 'Đồ uống',
+    'mam' : 'Mắm'
+  };
+  document.querySelectorAll('.btn-menu').forEach(btn => {
+    if (btn.textContent.trim() === buttonIdMap[id]) {
+      btn.classList.add('active');
     }
-    currentRow = 1;
-    hideBtn.classList.add("d-none");
-    showMoreBtn.classList.remove("d-none");
   });
+}
