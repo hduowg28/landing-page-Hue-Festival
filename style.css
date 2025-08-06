@@ -10,6 +10,7 @@ body {
 /*  linear-gradient(135deg, #43e97b, #38f9d7)*/
 /* linear-gradient(135deg, #ff9a9e, #fad0c4) */
 
+/* Desktop (mặc định) */
 .banner {
     width: 100%;
     height: 100vh;
@@ -55,6 +56,7 @@ body {
 }
 
 
+/* ✅ Mobile: overlay chữ lên ảnh */
 @media (max-width: 768px) {
     .banner {
         flex-direction: column;
@@ -97,6 +99,7 @@ body {
     z-index: 2;
 }
 
+/* Lớp phủ mờ */
 .overlay-layer {
     display: none;
 }
@@ -120,6 +123,7 @@ body {
 .carousel-wrapper {
     width: 100%;
     height: 600px;
+    /* hoặc 100vh nếu muốn toàn màn hình */
     overflow: hidden;
     position: relative;
 }
@@ -151,6 +155,7 @@ body {
 
     100% {
         transform: scale(1.2);
+        /* phóng to 10% */
     }
 }
 
@@ -177,6 +182,7 @@ body {
 .arrow-icon {
     font-size: 24px;
     color: #FFD700;
+    /* màu vàng */
     animation: bounce 1.2s infinite ease-in-out;
 }
 
@@ -192,9 +198,18 @@ body {
     }
 }
 
+.mbot {
+    margin-bottom: 200px;
+}
+
+.box-content {
+    position: relative;
+}
+
 
 .timeline {
     margin-top: 40px;
+
 }
 
 .col label {
@@ -203,6 +218,32 @@ body {
     position: absolute;
     border-radius: 10px;
     top: 8px;
+}
+
+.years .col {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#progress-bar {
+    transition: width 0.6 ease;
+    width: 10%;
+}
+
+
+.progress {}
+
+
+
+.tustom p {
+    padding: 0;
+    margin: 0;
+
+}
+
+.tustom {
+    background-color: whitesmoke;
 }
 
 .content-box {
@@ -343,7 +384,7 @@ body {
 }
 
 /* art */
-.art-element {
+.food-element {
     height: 360px;
     border-radius: 10px;
     background-color: #bfe1f7;
@@ -372,7 +413,7 @@ body {
     font-style: normal;
 }
 
-.art-element:hover {
+.food-element:hover {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
@@ -393,17 +434,17 @@ body {
     /* font-family: 'Open Sans', sans-serif; */
 }
 
-.art-element:hover .art-img {
+.food-element:hover .art-img {
     transform: scale(1.05);
     color: #ff0404;
 }
 
-/* .art-element:hover .art-text h3 {
+/* .food-element:hover .art-text h3 {
     color: #c62828;
     font-weight: 700;
 } */
 /* 
-.art-element:hover .art-text p {
+.food-element:hover .art-text p {
     color: #444;
     font-weight: 500;
 } */
@@ -428,12 +469,9 @@ body {
 }
 
 .card-langnghe:hover .card-img {
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
-.card-img {
-    height: 180px;
-    overflow: hidden;
-}
+
 .card-overlay {
     position: absolute;
     inset: 0;
@@ -520,4 +558,13 @@ body {
 .btn-menu.active {
   background-color: #c392f3;
   color: white;
+}
+
+.a-element{
+    height: 200px;
+}
+
+.a-img {
+    width: 40%;
+    object-fit: cover;
 }
