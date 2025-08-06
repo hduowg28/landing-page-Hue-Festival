@@ -299,14 +299,14 @@ body {
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 30px;
-    background-color: #d62828;
+    /* background-color: #d62828; */
     border: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
 
 .button-wrapper .custom-btn:hover {
-    background-color: #a61b1b;
+    background-color: #9cf4b6;
     transform: scale(1.05);
 }
 
