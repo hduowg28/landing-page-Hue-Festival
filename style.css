@@ -10,7 +10,6 @@ body {
 /*  linear-gradient(135deg, #43e97b, #38f9d7)*/
 /* linear-gradient(135deg, #ff9a9e, #fad0c4) */
 
-/* Desktop (mặc định) */
 .banner {
     width: 100%;
     height: 100vh;
@@ -56,7 +55,6 @@ body {
 }
 
 
-/* ✅ Mobile: overlay chữ lên ảnh */
 @media (max-width: 768px) {
     .banner {
         flex-direction: column;
@@ -99,7 +97,6 @@ body {
     z-index: 2;
 }
 
-/* Lớp phủ mờ */
 .overlay-layer {
     display: none;
 }
