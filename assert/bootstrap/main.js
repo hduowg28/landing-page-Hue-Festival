@@ -65,24 +65,3 @@ function showSection(id) {
   });
 }
 
-// nút khám phá thêm 
-document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll("#art-list .col-12");
-  let visibleCount = 4;
-
-  const loadMoreBtn = document.getElementById("loadMore");
-
-  function showMore() {
-    let nextVisible = visibleCount + 2;
-    for (let i = visibleCount; i < nextVisible && i < elements.length; i++) {
-      elements[i].classList.remove("d-none");
-    }
-    visibleCount = nextVisible;
-
-    if (visibleCount >= elements.length) {
-      loadMoreBtn.style.display = "none";
-    }
-  }
-
-  loadMoreBtn.addEventListener("click", showMore);
-});

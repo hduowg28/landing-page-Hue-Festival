@@ -5,6 +5,7 @@ body {
     /* background-image: linear-gradient(#eed2ee, #7c757d); */
     background-repeat: no-repeat;
     height: 100vh;
+    box-sizing: border-box;
 }
 
 /*  linear-gradient(135deg, #43e97b, #38f9d7)*/
@@ -567,4 +568,14 @@ body {
 .a-img {
     width: 40%;
     object-fit: cover;
+}
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-scale:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.timeline-detail p {
+  margin-bottom: 0.5rem;
 }
