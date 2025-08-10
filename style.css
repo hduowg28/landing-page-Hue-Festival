@@ -56,8 +56,6 @@ body {
     object-fit: cover;
 }
 
-
-/* ✅ Mobile: overlay chữ lên ảnh */
 @media (max-width: 768px) {
     .banner {
         flex-direction: column;
@@ -75,6 +73,12 @@ body {
     .mobile-text {
         z-index: 2;
         text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    }
+    .a-element {
+        height: 250px;
+    }
+    .a-mobile {
+        height: 350px
     }
 }
 
@@ -181,9 +185,9 @@ body {
 }
 
 .arrow-icon {
-    font-size: 24px;
+    font-size: 20px;
     color: #FFD700;
-    /* màu vàng */
+    margin-left: 10px;
     animation: bounce 1.2s infinite ease-in-out;
 }
 
@@ -556,26 +560,161 @@ body {
 .food-section.active {
     display: block;
 }
+
 .btn-menu.active {
-  background-color: #c392f3;
-  color: white;
+    background-color: #c392f3;
+    color: white;
 }
 
-.a-element{
+.a-element {
     height: 200px;
 }
+
+
 
 .a-img {
     width: 40%;
     object-fit: cover;
 }
+
 .hover-scale {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .hover-scale:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
+
 .timeline-detail p {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.navbar-bg {
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 60px;
+    height: calc(100% - 60px);
+}
+
+.navbar-brand {
+    height: 60px;
+    width: 60px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.5s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('your-image.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* background: rgba(0, 0, 0, 0.3);  */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 60%;
+    padding: 0 5%;
+    color: #fff;
+    margin-top: 120px;
+    border-left: 1px solid white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.hero-content em {
+    color: rgb(246, 218, 7);
+    font-style: normal;
+}
+
+.start-btn {
+    margin-top: 1rem;
+    background: #fff;
+    color: #000;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.reviews {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.nav-underline {
+  position: relative;
+  display: inline-block;
+}
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+.nav-underline:hover::after {
+  width: 100%;
+}
+
+/* Nút mặc định ẩn */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #555;
 }

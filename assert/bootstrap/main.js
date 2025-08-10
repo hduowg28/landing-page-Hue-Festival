@@ -65,3 +65,20 @@ function showSection(id) {
   });
 }
 
+const scrollbtn = document.getElementById('scrollTopBtn');
+const banner = document.getElementById('banner');
+
+window.onscroll = function () {
+  let bannerBottom = banner.offsetTop + banner.offsetHeight;
+  if (document.documentElement.scrollTop > bannerBottom) {
+    scrollbtn.style.display = "block";
+  } else {
+    scrollbtn.style.display = "none";
+  }
+};
+scrollTopBtn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
