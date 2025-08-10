@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     box-sizing: border-box;
+    background-color: #f3f4FB;
 }
 
 /*  linear-gradient(135deg, #43e97b, #38f9d7)*/
@@ -74,9 +75,11 @@ body {
         z-index: 2;
         text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
     }
+
     .a-element {
         height: 250px;
     }
+
     .a-mobile {
         height: 350px
     }
@@ -392,10 +395,11 @@ body {
 .food-element {
     height: 420px;
     border-radius: 10px;
-    background-color: #bfe1f7;
+    background: linear-gradient(135deg,#FBC2EB, #A6C1EE );
+    background: linear-gradient(135deg,#FFB7FD, #A8C0EE, #C58BE5 );
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-
+    color: black;
     transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1),
         box-shadow 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 
@@ -435,7 +439,7 @@ body {
 }
 
 .art-text>h3 {
-    color: #9338a3;
+    color: #ececec;
     /* font-family: 'Open Sans', sans-serif; */
 }
 
@@ -525,6 +529,10 @@ body {
     .card-overlay {
         opacity: 1 !important;
     }
+
+    .card-text {
+        font-size: small;
+    }
 }
 
 .footer-social a:hover {
@@ -567,7 +575,11 @@ body {
 }
 
 .a-element {
-    height: 200px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 
@@ -575,6 +587,10 @@ body {
 .a-img {
     width: 40%;
     object-fit: cover;
+    border: 2px dashed #d941d4;
+    border-radius: 8px;
+    padding: 4px;
+    background-color: white;
 }
 
 .hover-scale {
@@ -666,7 +682,7 @@ body {
 
 .start-btn {
     margin-top: 1rem;
-    background: #fff;
+    background: linear-gradient(135deg, #b672fd, #F88CAC);
     color: #000;
     padding: 0.7rem 1.5rem;
     border: none;
@@ -679,42 +695,97 @@ body {
     margin-top: 1rem;
     font-size: 1rem;
 }
+
 .nav-underline {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
+
 .nav-underline::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition: width 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
 }
+
 .nav-underline:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 /* Nút mặc định ẩn */
 #scrollTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #333;
-  color: white;
-  cursor: pointer;
-  padding: 12px 15px;
-  border-radius: 50%;
-  transition: opacity 0.3s ease;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
 }
 
 #scrollTopBtn:hover {
-  background-color: #555;
+    background-color: #555;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    z-index: 2;
+}
+
+.hero-section,
+.carousel-caption h1,
+.carousel-caption p {
+    color: white;
+}
+
+.bg-xuan {
+    background-color: #EBA0B3;
+    /* Hồng đậm hơn */
+    color: white;
+}
+
+.bg-ha {
+    background-color: #9E2A2B;
+    /* Cam đỏ */
+    color: white;
+}
+
+.bg-thu {
+    background-color: #A17C3A;
+    /* Nâu vàng */
+    color: white;
+}
+
+.bg-dong {
+    background-color: #1B4965;
+    /* Xanh navy */
+    color: white;
+}
+
+#show-more-btn,
+#hide-btn {
+    background-color: white;
+    color: #b672fd;
+    font-weight: bold;
 }
