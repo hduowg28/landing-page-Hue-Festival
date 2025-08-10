@@ -393,10 +393,9 @@ body {
 
 /* art */
 .food-element {
-    height: 420px;
+    height: 480px;
     border-radius: 10px;
-    background: linear-gradient(135deg,#FBC2EB, #A6C1EE );
-    background: linear-gradient(135deg,#FFB7FD, #A8C0EE, #C58BE5 );
+    background: linear-gradient(135deg, #FBC2EB, #A6C1EE);
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     color: black;
@@ -429,7 +428,7 @@ body {
 .art-img {
     object-fit: cover;
     border-radius: 10px 10px 0 0;
-    height: 45%;
+    height: 40%;
     transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
     will-change: transform;
 }
@@ -437,9 +436,13 @@ body {
 .art-text {
     padding: 15px;
 }
+.art-text > p:first-child  {
+    font-size: 10px;
+}
 
 .art-text>h3 {
     color: #ececec;
+    font-size: 25px;
     /* font-family: 'Open Sans', sans-serif; */
 }
 
@@ -559,7 +562,26 @@ body {
 
 .btn-menu {
     margin: 5px;
+    border: 1px solid #663399;
+    background-color: transparent;
+    color: #663399;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Mượt hơn khi đổi màu, shadow, scale */
 }
+
+.btn-menu:hover {
+    background-color: #663399;
+    color: white;
+    box-shadow: 0 4px 12px rgba(102, 51, 153, 0.4);
+    /* Đổ bóng tím nhạt */
+    transform: scale(1.05);
+    /* Phóng to nhẹ */
+}
+
 
 .food-section {
     display: none;
@@ -577,11 +599,25 @@ body {
 .a-element {
     height: 300px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 15px;
     box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
+.a-element:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.a-element img {
+  transition: transform 0.3s ease;
+}
+
+.a-element:hover img {
+  transform: scale(1.05);
+}
 
 
 .a-img {
@@ -788,4 +824,8 @@ body {
     background-color: white;
     color: #b672fd;
     font-weight: bold;
+}
+
+.hero-section h1 span {
+    font-family: 'Playfair Display', serif;
 }
