@@ -1,5 +1,5 @@
 let currentGroup = 1;
-const totalGroups = 2;
+const totalGroups = 5;
 
 const showMoreBtn = document.getElementById("show-more-btn");
 const hideBtn = document.getElementById("hide-btn");
