@@ -435,13 +435,17 @@ body {
 
 .art-text {
     padding: 15px;
+    
 }
-.art-text > p:first-child  {
-    font-size: 10px;
+.art-text > p {
+    font-size: 15px;
 }
-
+.art-text > p:last-child {
+    padding-top: 10px;
+    font-size: 18px;
+}
 .art-text>h3 {
-    color: #ececec;
+    color: #000000;
     font-size: 25px;
     /* font-family: 'Open Sans', sans-serif; */
 }
@@ -828,4 +832,11 @@ body {
 
 .hero-section h1 span {
     font-family: 'Playfair Display', serif;
+}
+
+.a-text > p {
+    font-size: 14px;
+}
+.a-text > p:last-child{
+    font-size: 18px;
 }
